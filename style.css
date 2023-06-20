@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1d1941;
+    font-family: 'Century gothic';
+}
+.container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+    gap: 10px;
+}
+.card{
+    min-width: 160px;
+    background: #fff;
+    position: relative;
+    padding:20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow:3px 3px 5px rgb(97, 128, 156);
+    margin: 0 15px;
+
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(4, 91, 173);
+    border-radius: 20px 20px 0 0;
+}
+
+.pic{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #444;
+    z-index: 1;
+    transform: translateY(10px);
+    border: solid 3px #fff;
+
+}
+
+.infos ul {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.titre{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.desc{
+    font-size: 1em;
+}
+
+.prix{
+    font-size: 2em;
+}
+
+.ajout button,.add button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(4, 91, 173);
+    color: #fff;
+    font-family: 'Century gothic';
+    box-shadow: 1px 2px 10px #444;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.add button{
+    padding:10px 50px;
+    margin-top: 20px;
+}
+button:hover{
+    box-shadow: 0px 0px 20px rgb(42, 152, 255),3px 3px 20px rgb(87, 99, 110);
+    background-color:rgb(19, 141, 255) ;
+}
